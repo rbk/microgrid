@@ -1,0 +1,13 @@
+
+.r:before, .r:after {
+    content: " ";
+    display: table;
+}
+
+*[class^="w-"] { float: left; }
+
+@for $i from 1 through 100 {
+	.w-#{$i} {
+		width: percentage($i/100);
+	}
+}
