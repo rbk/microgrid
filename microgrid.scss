@@ -7,17 +7,17 @@
 
 @media only screen and ( min-width: 992px ) {
 
-	*[class^="w-"] { float: left; }
+	*[class*="w-"] { float: left; }
 
 	@for $i from 1 through 100 {
 		.w-#{$i} {
 			width: percentage($i/100);
 		}
 	}
-	[class^="w-1-3"] {
+	[class*="w-1-3"] {
 		width: 33.333%;
 	}
-	[class^="w-2-3"] {
+	[class*="w-2-3"] {
 		width: 66.666%;
 	}
 
